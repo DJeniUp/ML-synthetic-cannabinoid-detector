@@ -6,6 +6,7 @@ dependencies = [
     "chembl-webresource-client>=0.10.9",
     "mlflow>=3.13.0",
     "numpy>=2.4.6",
+    "optuna>=4.9.0",
     "pandas>=2.3.3",
     "pyyaml>=6.0.3",
     "rdkit>=2026.3.2",

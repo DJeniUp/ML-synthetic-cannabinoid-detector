@@ -345,6 +345,18 @@ wheels = [
 ]
 
 [[package]]
+name = "colorlog"
+version = "6.10.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/a2/61/f083b5ac52e505dfc1c624eafbf8c7589a0d7f32daa398d2e7590efa5fda/colorlog-6.10.1.tar.gz", hash = "sha256:eb4ae5cb65fe7fec7773c2306061a8e63e02efc2c72eba9d27b0fa23c94f1321", size = 17162, upload-time = "2025-10-16T16:14:11.978Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/6d/c1/e419ef3723a074172b68aaa89c9f3de486ed4c2399e2dbd8113a4fdcaf9e/colorlog-6.10.1-py3-none-any.whl", hash = "sha256:2d7e8348291948af66122cff006c9f8da6255d224e7cf8e37d8de2df3bad8c9c", size = 11743, upload-time = "2025-10-16T16:14:10.512Z" },
+]
+
+[[package]]
 name = "contourpy"
 version = "1.3.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1118,6 +1130,7 @@ dependencies = [
     { name = "chembl-webresource-client" },
     { name = "mlflow" },
     { name = "numpy" },
+    { name = "optuna" },
     { name = "pandas" },
     { name = "pyyaml" },
     { name = "rdkit" },
@@ -1130,6 +1143,7 @@ requires-dist = [
     { name = "chembl-webresource-client", specifier = ">=0.10.9" },
     { name = "mlflow", specifier = ">=3.13.0" },
     { name = "numpy", specifier = ">=2.4.6" },
+    { name = "optuna", specifier = ">=4.9.0" },
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "pyyaml", specifier = ">=6.0.3" },
     { name = "rdkit", specifier = ">=2026.3.2" },
@@ -1335,6 +1349,24 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/93/99/4d7dd6df64795951413ce6e815f8cf1eb191daf7196ae86574589643d5f3/opentelemetry_semantic_conventions-0.63b1.tar.gz", hash = "sha256:3daf963611334b365e98a57438183eb012d3bfb40b2d931a9af613476b8701a9", size = 148340, upload-time = "2026-05-21T16:33:05.455Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/cb/7a/7fe66f5f3682b1dd47d88cc4e11f1c6c0966b737de2d16671146e23c39a5/opentelemetry_semantic_conventions-0.63b1-py3-none-any.whl", hash = "sha256:dfe5ef4dee82586b746f522b818ceb298d00b3d59f660042bd79404bff8d0682", size = 203713, upload-time = "2026-05-21T16:32:47.016Z" },
+]
+
+[[package]]
+name = "optuna"
+version = "4.9.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "alembic" },
+    { name = "colorlog" },
+    { name = "numpy" },
+    { name = "packaging" },
+    { name = "pyyaml" },
+    { name = "sqlalchemy" },
+    { name = "tqdm" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f4/aa/05f5e3f662cc96a4c478fc3446b8ed6359825a2b504ecb614a9ac84e4a4d/optuna-4.9.0.tar.gz", hash = "sha256:b322e5cbdf1655fb84c37646c4a7a1f391de1b47806bbe222e015825d0a82b87", size = 485834, upload-time = "2026-06-01T06:23:30.424Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ab/f3/e5fcd5d9b15771ed6dc10e3a7eeddc672e418f4f4c4653d216cc1d857e2d/optuna-4.9.0-py3-none-any.whl", hash = "sha256:f52f3be6148654850c92a5860d398fd88ec6b2c84ab68d9c3d07dcff02e7afee", size = 425553, upload-time = "2026-06-01T06:23:28.804Z" },
 ]
 
 [[package]]
@@ -2016,6 +2048,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/b7/4d/08c89e34946fce2aec4fbb45c9016efd5f4d7f24af8e5d93296e935631d8/threadpoolctl-3.6.0.tar.gz", hash = "sha256:8ab8b4aa3491d812b623328249fab5302a68d2d71745c8a4c719a2fcaba9f44e", size = 21274, upload-time = "2025-03-13T13:49:23.031Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/32/d5/f9a850d79b0851d1d4ef6456097579a9005b31fea68726a4ae5f2d82ddd9/threadpoolctl-3.6.0-py3-none-any.whl", hash = "sha256:43a0b8fd5a2928500110039e43a5eed8480b918967083ea48dc3ab9f13c4a7fb", size = 18638, upload-time = "2025-03-13T13:49:21.846Z" },
+]
+
+[[package]]
+name = "tqdm"
+version = "4.67.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "colorama", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/09/a9/6ba95a270c6f1fbcd8dac228323f2777d886cb206987444e4bce66338dd4/tqdm-4.67.3.tar.gz", hash = "sha256:7d825f03f89244ef73f1d4ce193cb1774a8179fd96f31d7e1dcde62092b960bb", size = 169598, upload-time = "2026-02-03T17:35:53.048Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/16/e1/3079a9ff9b8e11b846c6ac5c8b5bfb7ff225eee721825310c91b3b50304f/tqdm-4.67.3-py3-none-any.whl", hash = "sha256:ee1e4c0e59148062281c49d80b25b67771a127c85fc9676d3be5f243206826bf", size = 78374, upload-time = "2026-02-03T17:35:50.982Z" },
 ]
 
 [[package]]
