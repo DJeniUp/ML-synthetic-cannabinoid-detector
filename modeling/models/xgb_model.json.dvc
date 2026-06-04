@@ -1,0 +1,6 @@
+outs:
+- md5: 521f6e49e0e5c633334aa703f22bb84f
+  size: 1730517
+  isexec: true
+  hash: md5
+  path: xgb_model.json

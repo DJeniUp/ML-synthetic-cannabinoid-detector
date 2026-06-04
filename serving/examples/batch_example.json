@@ -1,0 +1,8 @@
+{
+  "smiles_list": [
+    "CC1=CC[C@@H]2[C@@H](C1)c1c(O)cc(CCCCCN=[N+]=[N-])cc1OC2(C)C",
+    "CN/C(=N\\S(=O)(=O)N1CCC(F)(F)CC1)C1=NN(c2ccc(Cl)cc2)[C@H](c2ccccc2)C1",
+    "O=C(NN1CCCCC1)c1nc(-c2ccc(Cl)cc2Cl)n(-c2ccc(Cl)cc2)n1",
+    "INVALID_SMILES_EXAMPLE"
+  ]
+}

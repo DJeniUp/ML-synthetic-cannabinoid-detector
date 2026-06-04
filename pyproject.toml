@@ -1,0 +1,8 @@
+[project]
+name = "synthetic-cannabinoid-detector"
+version = "0.1.0"
+description = "CB1 cannabinoid activity prediction — repo root (DVC tooling)"
+requires-python = ">=3.11"
+dependencies = [
+    "dvc[gdrive]>=3.0.0",
+]
