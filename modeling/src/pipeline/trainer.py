@@ -51,6 +51,9 @@ class Trainer:
             max_depth=xgb_cfg["max_depth"],
             subsample=xgb_cfg["subsample"],
             colsample_bytree=xgb_cfg["colsample_bytree"],
+            min_child_weight=xgb_cfg.get("min_child_weight", 1),
+            reg_alpha=xgb_cfg.get("reg_alpha", 0.0),
+            reg_lambda=xgb_cfg.get("reg_lambda", 1.0),
             random_state=xgb_cfg["random_state"],
             n_jobs=xgb_cfg["n_jobs"],
         )

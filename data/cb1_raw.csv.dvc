@@ -1,6 +1,5 @@
 outs:
 - md5: 12b17632c9d57018a2b53658cccc68b2
   size: 1000582
-  isexec: true
   hash: md5
   path: cb1_raw.csv
