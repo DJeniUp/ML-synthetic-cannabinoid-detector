@@ -57,3 +57,5 @@ modeling/models/walkforward_plot.png
 # Draft notebook and scratch test (not part of the project)
 01_eda.ipynb
 test.pyserving/models/*.json
+venv-gnn/
+gnn-env/
